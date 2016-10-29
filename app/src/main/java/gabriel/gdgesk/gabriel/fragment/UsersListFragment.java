@@ -1,7 +1,6 @@
 package gabriel.gdgesk.gabriel.fragment;
 
-
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 
 /**
  * Created by yucel on 19.10.2016.
