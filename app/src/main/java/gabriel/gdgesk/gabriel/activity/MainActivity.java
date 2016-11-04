@@ -17,8 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.toolbar)
     protected Toolbar toolbar;
+
     @BindView(R.id.tabs)
     protected TabLayout tabLayout;
+
     @BindView(R.id.viewpager)
     protected ViewPager viewPager;
 
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         ButterKnife.bind(this);
 
         setSupportActionBar(toolbar);
@@ -35,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(ChatsListFragment.newInstance(), getString(R.string.chats));
-        adapter.addFragment(UsersListFragment.newInstance(), getString(R.string.people));
+        adapter.addFragment(ChatsListFragment.newInstance(), getString(R.string.chats_tab_title));
+        adapter.addFragment(UsersListFragment.newInstance(), getString(R.string.people_tab_title));
 
         viewPager.setAdapter(adapter);
     }

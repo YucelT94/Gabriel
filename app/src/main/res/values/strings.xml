@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Gabriel</string>
-    <string name="chats">CHATS</string>
-    <string name="people">PEOPLE</string>
+    <string name="chats_tab_title">CHATS</string>
+    <string name="people_tab_title">PEOPLE</string>
 </resources>
